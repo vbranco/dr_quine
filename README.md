@@ -16,29 +16,28 @@ https://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html
 ### Registres
 https://i.stack.imgur.com/j8hpC.png
 
-##Compile
+## Compile
 https://stackoverflow.com/questions/55314762/linking-a-program-using-printf-with-ld
-###Colleen
+### Colleen
 nasm -f elf64 Colleen.s
 clang -Wall -Werror -Wextra -no-pie Colleen.o -o Colleen
 
-###Grace
+### Grace
 nasm -D FIRST=1 -f elf64 Grace.s
 clang -Wall -Werror -Wextra -no-pie -nostartfiles Grace.o -o Grace
 
-###Sully
-
+### Sully
 nasm -f elf64 file.s
 - si j'utilise global _start commme debut de program
 clang -Wall -Werror -Wextra -no-pie -nostartfiles file.o
 - autrement avec global main il faut
 clang -Wall -Werror -Wextra -no-pie file.o
 
-###Macros and defines
+### Macros and defines
 https://www.tutorialspoint.com/assembly_programming/assembly_constants.htm
 https://www.tortall.net/projects/yasm/manual/html/nasm-macro-conditional.html
 https://www.nasm.us/doc/nasmdoc2.html#section-2.1.19
 
-###Python format string
+### Python format string
 https://docs.python.org/fr/3.5/library/string.html
 https://www.geeksforgeeks.org/python-output-formatting/
