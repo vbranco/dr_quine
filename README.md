@@ -16,7 +16,7 @@ https://cdn.intra.42.fr/pdf/pdf/5194/dr_quine.fr.pdf
 ### Registres
 - https://i.stack.imgur.com/j8hpC.png
 
-## Compile
+### Compile
 - https://stackoverflow.com/questions/55314762/linking-a-program-using-printf-with-ld
 
 ### Macros and defines
