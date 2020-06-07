@@ -1,8 +1,8 @@
 
-## Sources
-### PDF Project
+## PDF Project
 https://cdn.intra.42.fr/pdf/pdf/5194/dr_quine.fr.pdf
 
+## Sources
 ### Infos generiques
 - http://www.madore.org/~david/computers/quine.html
 - https://sciencetonnante.wordpress.com/2012/03/19/les-quines-des-programmes-informatiques-auto-replicateurs/
