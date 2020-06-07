@@ -18,20 +18,6 @@ https://i.stack.imgur.com/j8hpC.png
 
 ## Compile
 https://stackoverflow.com/questions/55314762/linking-a-program-using-printf-with-ld
-### Colleen
-nasm -f elf64 Colleen.s
-clang -Wall -Werror -Wextra -no-pie Colleen.o -o Colleen
-
-### Grace
-nasm -D FIRST=1 -f elf64 Grace.s
-clang -Wall -Werror -Wextra -no-pie -nostartfiles Grace.o -o Grace
-
-### Sully
-nasm -f elf64 file.s
-- si j'utilise global _start commme debut de program
-clang -Wall -Werror -Wextra -no-pie -nostartfiles file.o
-- autrement avec global main il faut
-clang -Wall -Werror -Wextra -no-pie file.o
 
 ### Macros and defines
 https://www.tutorialspoint.com/assembly_programming/assembly_constants.htm
