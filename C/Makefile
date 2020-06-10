@@ -23,7 +23,7 @@ OUTPUT_PATH	=	./output/
 # -------------------------------------#
 # 		SRC   					 	   #
 # -------------------------------------#
-SRC	=	Colleen.c Grace.c Sully.c
+SRC			=	Colleen.c Grace.c Sully.c
 
 # -------------------------------------#
 # 		VARS  					 	   #
