@@ -7,8 +7,11 @@ NAME		=	Dr_Quine
 # 		EXEC  					 	   #
 # -------------------------------------#
 COLLEEN 	=	Colleen
+O_COLLEEN 	=	./output/Colleen
 GRACE		=	Grace
+O_GRACE		=	./output/Grace
 SULLY		=	Sully
+O_SULLY		=	./output/Sully
 
 # -------------------------------------#
 # 		PATH   					 	   #
@@ -36,20 +39,20 @@ FLAGS		=	-Wall -Werror -Wextra
 # -------------------------------------#
 # 		RULES  					 	   #
 # -------------------------------------#
-all : $(NAME) $(COLLEEN) $(GRACE) $(SULLY)
+all : $(O_COLLEEN) $(O_GRACE) $(O_SULLY)
 
 $(NAME): $(OBJ_PATH) $(OBJ)
 
-$(COLLEEN):
-	@$(CC) $(FLAGS) -o $(OUTPUT_PATH)$@ $(OBJ_PATH)$(COLLEEN).o
+$(O_COLLEEN): $(OBJ_PATH) $(OBJ)
+	@$(CC) $(FLAGS) -o $(OUTPUT_PATH)$(COLLEEN) $(OBJ_PATH)$(COLLEEN).o
 	@printf "\033[32mColleen 		[OK]\033[0m\n"
 
-$(GRACE):
-	@$(CC) $(FLAGS) -o $(OUTPUT_PATH)$@ $(OBJ_PATH)$(GRACE).o
+$(O_GRACE): $(OBJ_PATH) $(OBJ)
+	@$(CC) $(FLAGS) -o $(OUTPUT_PATH)$(GRACE) $(OBJ_PATH)$(GRACE).o
 	@printf "\033[32mGrace   		[OK]\033[0m\n"
 
-$(SULLY):		
-	@$(CC) $(FLAGS) -o $(OUTPUT_PATH)$@ $(OBJ_PATH)$(SULLY).o
+$(O_SULLY): $(OBJ_PATH) $(OBJ)	
+	@$(CC) $(FLAGS) -o $(OUTPUT_PATH)$(SULLY) $(OBJ_PATH)$(SULLY).o
 	@printf "\033[32mSully   		[OK]\033[0m\n"
 
 $(OBJ_PATH):
